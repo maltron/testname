@@ -1,0 +1,8 @@
+- name: Example of creating several names into a single file
+  hosts: localhost
+  tasks:
+       - name: Creating first name
+         lineinfile: create=true dest=/root/myname2.txt line='Maltron'
+
+       - name: Another name
+         lineinfile: create=true dest=/root/myname2.txt line='Nadia'
